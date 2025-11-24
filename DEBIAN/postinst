@@ -1,0 +1,18 @@
+#!/bin/sh
+set -e
+# Ensure executable bits for launcher
+if [ -e "/usr/local/bin/replace_db_config.sh" ]; then
+  chmod 0755 /usr/local/bin/replace_db_config.sh || true
+fi
+
+# Refresh desktop database so the .desktop entry is picked up
+if command -v update-desktop-database >/dev/null 2>&1; then
+  update-desktop-database /usr/share/applications || true
+fi
+
+# Refresh icon cache for hicolor
+if command -v gtk-update-icon-cache >/dev/null 2>&1; then
+  gtk-update-icon-cache -f /usr/share/icons/hicolor || true
+fi
+
+exit 0

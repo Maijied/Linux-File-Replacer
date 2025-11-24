@@ -1,0 +1,3 @@
+#!/bin/sh
+# Wrapper to allow launching from desktop menu or terminal as `dbreplacer`
+exec /usr/local/bin/replace_db_config.sh "$@"

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Laravel DB Config Switcher
+Comment=Switch Laravel database configuration quickly
+Exec=dbreplacer
+TryExec=dbreplacer
+Icon=dbreplacer
+Terminal=false
+Categories=Development;Utility;
+StartupNotify=true

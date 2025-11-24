@@ -1,0 +1,18 @@
+
+Package: dbreplacer
+Version: 1.0
+Section: utils
+Priority: optional
+Architecture: all
+Depends: zenity, bash
+Maintainer: Maizied Hasan Majumder <mdshuvo40@gmail.com>
+Standards-Version: 4.6.0
+Description: Laravel DB Config Switcher
+ A small desktop utility (Zenity + Bash) that replaces a Laravel
+ `config/database.php` by copying one of three template files
+ (`database.local.php`, `database.beta.php`, `database.live.php`).
+ Includes a graphical Zenity UI and a non-interactive `--apply`
+ mode for scripting and testing. Templates in `opt/dbreplacer/` may
+ contain example credentials; treat them as sensitive before
+ publishing.
+
